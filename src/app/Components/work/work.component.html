@@ -1,0 +1,27 @@
+<main>
+    <div class="featured">
+        <h1 class="h1">Work</h1>
+        <div class="blocks">
+          @for(card of cards; track $index){
+          <div class="block">
+            <img
+              src={{card.main_img}}
+              alt=""
+              class="bl_img"
+            />
+            <div class="bl_text">
+              <p class="bl_p">{{card.title}}</p>
+              <div class="rt">
+                <div class="year"><p class="bl_p2_p">{{card.year}}</p></div>
+                <span class="bl_p2">{{card.tags}}</span>
+              </div>
+              <p class="bl_p3">
+                {{card.text}}
+              </p>
+            </div>
+          </div>
+          <hr style="opacity: 0.5; margin: 31px 0 31px 0;">
+          }
+        </div>
+        </div>
+</main>

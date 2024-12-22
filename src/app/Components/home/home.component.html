@@ -1,0 +1,66 @@
+<main>
+  <div class="resume">
+    <div class="text">
+      <p class="text1">Hi, I am John, Creative Technologist</p>
+      <p class="text2">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+      <button>Download Resume</button>
+    </div>
+    <div class="img"></div>
+  </div>
+  <div class="post">
+    <div class="post_doch">
+      <p class="post_doch_p">Recent posts</p>
+      <div class="post_doch_div">
+        <div class="post_doch_div1">
+          <p class="post_doch_div_p1">Creating pixel perfect icons in Figma</p>
+          <p class="post_doch_div_p2">12 Feb 2020 | Design, Pattern</p>
+          <p class="post_doch_div_p3">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <div class="post_doch_div1">
+            <p class="post_doch_div_p1">Making a design system from scratch</p>
+            <p class="post_doch_div_p2">12 Feb 2020 | Design, Pattern</p>
+            <p class="post_doch_div_p3">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint. Velit officia consequat duis enim velit mollit. Exercitation
+              veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="featured">
+    <p class="featured_p">Featured works</p>
+    <div class="blocks">
+      @for(card of cards; track $index){
+      <div class="block">
+        <img
+          src={{card.main_img}}
+          alt=""
+          class="bl_img"
+        />
+        <div class="bl_text">
+          <p class="bl_p">{{card.title}}</p>
+          <div class="rt">
+            <div class="year"><p class="bl_p2_p">{{card.year}}</p></div>
+            <span class="bl_p2">{{card.tags}}</span>
+          </div>
+          <p class="bl_p3">
+            {{card.text}}
+          </p>
+        </div>
+      </div>
+      <hr style="opacity: 0.5; margin: 31px 0 31px 0;">
+      }
+    </div>
+  </div>
+
+
+</main>
